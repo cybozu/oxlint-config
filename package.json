@@ -1,0 +1,55 @@
+{
+  "name": "@cybozu/oxlint-config",
+  "version": "0.0.1",
+  "description": "An Oxlint rule-set for Cybozu.",
+  "repository": "cybozu/oxlint-config",
+  "homepage": "https://github.com/cybozu/oxlint-config",
+  "bugs": "https://github.com/cybozu/oxlint-config/issues",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./presets/base": "./dist/presets/base.js",
+    "./presets/kintone-customize": "./dist/presets/kintone-customize.js",
+    "./presets/node": "./dist/presets/node.js",
+    "./presets/node-typescript": "./dist/presets/node-typescript.js",
+    "./presets/react": "./dist/presets/react.js",
+    "./presets/react-typescript": "./dist/presets/react-typescript.js",
+    "./presets/typescript": "./dist/presets/typescript.js",
+    "./configs/base": "./dist/configs/base.js",
+    "./configs/kintone": "./dist/configs/kintone.js",
+    "./configs/node": "./dist/configs/node.js",
+    "./configs/react": "./dist/configs/react.js",
+    "./configs/react-typescript": "./dist/configs/react-typescript.js",
+    "./configs/typescript": "./dist/configs/typescript.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "oxlint"
+  ],
+  "author": "cybozu",
+  "license": "MIT",
+  "packageManager": "pnpm@10.29.3",
+  "engines": {
+    "node": ">=24"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    }
+  },
+  "peerDependencies": {
+    "oxlint": ">=1.0.0"
+  },
+  "devDependencies": {
+    "oxlint": "1.64.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.6"
+  }
+}
