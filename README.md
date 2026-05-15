@@ -1,2 +1,3 @@
 # oxlint-confg
-An Oxlint configs for Cybozu.
+
+An oxlint configs for Cybozu.
