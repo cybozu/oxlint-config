@@ -1,12 +1,12 @@
 {
   "name": "@cybozu/oxlint-config",
-  "version": "0.0.1",
-  "description": "An Oxlint rule-set for Cybozu.",
+  "type": "module",
   "repository": "cybozu/oxlint-config",
   "homepage": "https://github.com/cybozu/oxlint-config",
   "bugs": "https://github.com/cybozu/oxlint-config/issues",
-  "type": "module",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "An oxlint rule-set for Cybozu.",
+  "main": "./dist/index.js",
   "files": [
     "dist"
   ],
@@ -24,7 +24,8 @@
     "./configs/node": "./dist/configs/node.js",
     "./configs/react": "./dist/configs/react.js",
     "./configs/react-typescript": "./dist/configs/react-typescript.js",
-    "./configs/typescript": "./dist/configs/typescript.js"
+    "./configs/typescript": "./dist/configs/typescript.js",
+    "./globals/kintone": "./dist/globals/kintone.js"
   },
   "scripts": {
     "build": "tsc"
@@ -34,16 +35,6 @@
   ],
   "author": "cybozu",
   "license": "MIT",
-  "packageManager": "pnpm@10.29.3",
-  "engines": {
-    "node": ">=24"
-  },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "onFail": "error"
-    }
-  },
   "peerDependencies": {
     "oxlint": ">=1.0.0"
   },
@@ -51,5 +42,16 @@
     "oxlint": "1.64.0",
     "typescript": "6.0.3",
     "vitest": "4.1.6"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
