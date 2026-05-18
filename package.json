@@ -8,50 +8,41 @@
   "description": "An oxlint rule-set for Cybozu.",
   "main": "./dist/index.js",
   "files": [
-    "dist"
+    "src/presets"
   ],
   "exports": {
-    ".": "./dist/index.js",
-    "./presets/base": "./dist/presets/base.js",
-    "./presets/kintone-customize": "./dist/presets/kintone-customize.js",
-    "./presets/node": "./dist/presets/node.js",
-    "./presets/node-typescript": "./dist/presets/node-typescript.js",
-    "./presets/react": "./dist/presets/react.js",
-    "./presets/react-typescript": "./dist/presets/react-typescript.js",
-    "./presets/typescript": "./dist/presets/typescript.js",
-    "./configs/base": "./dist/configs/base.js",
-    "./configs/kintone": "./dist/configs/kintone.js",
-    "./configs/node": "./dist/configs/node.js",
-    "./configs/react": "./dist/configs/react.js",
-    "./configs/react-typescript": "./dist/configs/react-typescript.js",
-    "./configs/typescript": "./dist/configs/typescript.js",
-    "./globals/kintone": "./dist/globals/kintone.js"
+    ".": "./src/presets/base.oxlintrc.json",
+    "./presets/base": "./src/presets/base.oxlintrc.json",
+    "./presets/es5": "./src/presets/es5.oxlintrc.json",
+    "./presets/kintone-customize": "./src/presets/kintone-customize.oxlintrc.json",
+    "./presets/kintone-customize-es5": "./src/presets/kintone-customize-es5.oxlintrc.json",
+    "./presets/node": "./src/presets/node.oxlintrc.json",
+    "./presets/react": "./src/presets/react.oxlintrc.json",
+    "./presets/react-typescript": "./src/presets/react-typescript.oxlintrc.json",
+    "./presets/typescript": "./src/presets/typescript.oxlintrc.json"
   },
-  "scripts": {
-    "build": "tsc"
-  },
+  "scripts": {},
   "keywords": [
-    "oxlint"
+    "oxlint",
+    "oxlint-config",
+    "oxfmt",
+    "linter",
+    "typescript",
+    "cybozu"
   ],
   "author": "cybozu",
   "license": "MIT",
   "peerDependencies": {
-    "oxlint": ">=1.0.0"
+    "oxlint": ">=1.65.0",
+    "oxlint-tsgolint": ">=0.22.0"
   },
-  "devDependencies": {
-    "oxlint": "1.64.0",
-    "typescript": "6.0.3",
-    "vitest": "4.1.6"
-  },
-  "packageManager": "pnpm@10.29.3",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "onFail": "error"
+  "peerDependenciesMeta": {
+    "oxlint-tsgolint": {
+      "optional": true
     }
   },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
+  "devDependencies": {
+    "oxlint": "^1.65.0",
+    "oxlint-tsgolint": "^0.22.1"
   }
 }
