@@ -44,5 +44,16 @@
   "devDependencies": {
     "oxlint": "^1.65.0",
     "oxlint-tsgolint": "^0.22.1"
+  },
+  "packageManager": "pnpm@11.0.9",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "onFail": "error"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
