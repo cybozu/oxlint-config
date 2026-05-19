@@ -7,6 +7,8 @@
   "version": "0.2.0",
   "description": "An oxlint rule-set for Cybozu.",
   "files": [
+    "src/configs",
+    "src/globals",
     "src/presets"
   ],
   "exports": {
