@@ -1,5 +1,6 @@
-{
-  "$schema": "../node_modules/oxlint/configuration_schema.json",
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
   "plugins": [],
   "categories": {
     "correctness": "off"
@@ -15,23 +16,11 @@
       "files": [
         "**/*.{js,cjs,mjs,ts,mts,cts,jsx,tsx}"
       ],
-      "globals": {
-        "kintone": "readonly",
-        "moment": "readonly",
-        "Handsontable": "readonly",
-        "hljs": "readonly",
-        "marked": "readonly",
-        "sweetAlert": "readonly",
-        "swal": "readonly",
-        "Chart": "readonly",
-        "DOMPurify": "readonly",
-        "Spinner": "readonly",
-        "UltraDate": "readonly"
-      },
       "env": {
         "es2026": true,
         "browser": true,
-        "jquery": true
+        "commonjs": true,
+        "es2024": true
       },
       "rules": {
         "constructor-super": "error",
@@ -213,12 +202,91 @@
         "unicode-bom": "warn",
         "import/no-duplicates": "warn",
         "typescript/consistent-return": "warn",
-        "typescript/dot-notation": "warn"
+        "typescript/dot-notation": "warn",
+        "node/no-exports-assign": "error",
+        "no-console": "off"
       },
       "plugins": [
         "typescript",
-        "import"
-      ]
+        "import",
+        "node"
+      ],
+      "globals": {
+        "__dirname": "off",
+        "__filename": "off",
+        "AbortController": "readonly",
+        "AbortSignal": "readonly",
+        "atob": "readonly",
+        "Blob": "readonly",
+        "BroadcastChannel": "readonly",
+        "btoa": "readonly",
+        "Buffer": "readonly",
+        "ByteLengthQueuingStrategy": "readonly",
+        "clearImmediate": "readonly",
+        "clearInterval": "readonly",
+        "clearTimeout": "readonly",
+        "CloseEvent": "readonly",
+        "CompressionStream": "readonly",
+        "console": "readonly",
+        "CountQueuingStrategy": "readonly",
+        "crypto": "readonly",
+        "Crypto": "readonly",
+        "CryptoKey": "readonly",
+        "CustomEvent": "readonly",
+        "DecompressionStream": "readonly",
+        "DOMException": "readonly",
+        "Event": "readonly",
+        "EventTarget": "readonly",
+        "exports": "off",
+        "fetch": "readonly",
+        "File": "readonly",
+        "FormData": "readonly",
+        "global": "readonly",
+        "Headers": "readonly",
+        "MessageChannel": "readonly",
+        "MessageEvent": "readonly",
+        "MessagePort": "readonly",
+        "module": "off",
+        "navigator": "readonly",
+        "Navigator": "readonly",
+        "performance": "readonly",
+        "Performance": "readonly",
+        "PerformanceEntry": "readonly",
+        "PerformanceMark": "readonly",
+        "PerformanceMeasure": "readonly",
+        "PerformanceObserver": "readonly",
+        "PerformanceObserverEntryList": "readonly",
+        "PerformanceResourceTiming": "readonly",
+        "process": "readonly",
+        "queueMicrotask": "readonly",
+        "ReadableByteStreamController": "readonly",
+        "ReadableStream": "readonly",
+        "ReadableStreamBYOBReader": "readonly",
+        "ReadableStreamBYOBRequest": "readonly",
+        "ReadableStreamDefaultController": "readonly",
+        "ReadableStreamDefaultReader": "readonly",
+        "Request": "readonly",
+        "require": "off",
+        "Response": "readonly",
+        "setImmediate": "readonly",
+        "setInterval": "readonly",
+        "setTimeout": "readonly",
+        "structuredClone": "readonly",
+        "SubtleCrypto": "readonly",
+        "TextDecoder": "readonly",
+        "TextDecoderStream": "readonly",
+        "TextEncoder": "readonly",
+        "TextEncoderStream": "readonly",
+        "TransformStream": "readonly",
+        "TransformStreamDefaultController": "readonly",
+        "URL": "readonly",
+        "URLSearchParams": "readonly",
+        "WebAssembly": "readonly",
+        "WebSocket": "readonly",
+        "WritableStream": "readonly",
+        "WritableStreamDefaultController": "readonly",
+        "WritableStreamDefaultWriter": "readonly"
+      }
     }
   ]
-}
+});

@@ -6,20 +6,17 @@
   "bugs": "https://github.com/cybozu/oxlint-config/issues",
   "version": "0.2.0",
   "description": "An oxlint rule-set for Cybozu.",
-  "main": "./dist/index.js",
   "files": [
     "src/presets"
   ],
   "exports": {
-    ".": "./src/presets/base.oxlintrc.json",
-    "./presets/base": "./src/presets/base.oxlintrc.json",
-    "./presets/es5": "./src/presets/es5.oxlintrc.json",
-    "./presets/kintone-customize": "./src/presets/kintone-customize.oxlintrc.json",
-    "./presets/kintone-customize-es5": "./src/presets/kintone-customize-es5.oxlintrc.json",
-    "./presets/node": "./src/presets/node.oxlintrc.json",
-    "./presets/react": "./src/presets/react.oxlintrc.json",
-    "./presets/react-typescript": "./src/presets/react-typescript.oxlintrc.json",
-    "./presets/typescript": "./src/presets/typescript.oxlintrc.json"
+    ".": "./src/presets/base.ts",
+    "./presets/base": "./src/presets/base.ts",
+    "./presets/kintone-customize": "./src/presets/kintone-customize.ts",
+    "./presets/node": "./src/presets/node.ts",
+    "./presets/react": "./src/presets/react.ts",
+    "./presets/react-typescript": "./src/presets/react-typescript.ts",
+    "./presets/typescript": "./src/presets/typescript.ts"
   },
   "scripts": {},
   "keywords": [

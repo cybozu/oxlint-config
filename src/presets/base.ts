@@ -1,5 +1,6 @@
-{
-  "$schema": "../node_modules/oxlint/configuration_schema.json",
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
   "plugins": [],
   "categories": {
     "correctness": "off"
@@ -13,7 +14,7 @@
   "overrides": [
     {
       "files": [
-        "**/*.{js,cjs,mjs,ts,cts,mts}"
+        "**/*.{js,cjs,mjs,ts,mts,cts,jsx,tsx}"
       ],
       "env": {
         "es2026": true,
@@ -206,144 +207,6 @@
         "typescript",
         "import"
       ]
-    },
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.mts",
-        "**/*.cts",
-        "**/*.{js,cjs,mjs,ts,cts,mts}"
-      ],
-      "rules": {
-        "constructor-super": "off",
-        "getter-return": "off",
-        "no-class-assign": "off",
-        "no-const-assign": "off",
-        "no-dupe-class-members": "off",
-        "no-dupe-keys": "off",
-        "no-func-assign": "off",
-        "no-import-assign": "off",
-        "no-new-native-nonconstructor": "off",
-        "no-obj-calls": "off",
-        "no-redeclare": "off",
-        "no-setter-return": "off",
-        "no-this-before-super": "off",
-        "no-unreachable": "off",
-        "no-unsafe-negation": "off",
-        "no-var": "error",
-        "no-with": "off",
-        "prefer-const": "error",
-        "prefer-rest-params": "error",
-        "prefer-spread": "error"
-      }
-    },
-    {
-      "files": [
-        "**/*.{js,cjs,mjs,ts,cts,mts}"
-      ],
-      "rules": {
-        "no-array-constructor": "error",
-        "no-unused-expressions": "error",
-        "no-unused-vars": "error",
-        "typescript/ban-ts-comment": "error",
-        "typescript/no-duplicate-enum-values": "error",
-        "typescript/no-empty-object-type": "error",
-        "typescript/no-explicit-any": "error",
-        "typescript/no-extra-non-null-assertion": "error",
-        "typescript/no-misused-new": "error",
-        "typescript/no-namespace": "error",
-        "typescript/no-non-null-asserted-optional-chain": "error",
-        "typescript/no-require-imports": "error",
-        "typescript/no-this-alias": "error",
-        "typescript/no-unnecessary-type-constraint": "error",
-        "typescript/no-unsafe-declaration-merging": "error",
-        "typescript/no-unsafe-function-type": "error",
-        "typescript/no-wrapper-object-types": "error",
-        "typescript/prefer-as-const": "error",
-        "typescript/prefer-namespace-keyword": "error",
-        "typescript/triple-slash-reference": "error"
-      },
-      "plugins": [
-        "typescript"
-      ]
-    },
-    {
-      "files": [
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.mts",
-        "**/*.cts",
-        "**/*.{js,cjs,mjs,ts,cts,mts}"
-      ],
-      "rules": {
-        "constructor-super": "off",
-        "getter-return": "off",
-        "no-class-assign": "off",
-        "no-const-assign": "off",
-        "no-dupe-class-members": "off",
-        "no-dupe-keys": "off",
-        "no-func-assign": "off",
-        "no-import-assign": "off",
-        "no-new-native-nonconstructor": "off",
-        "no-obj-calls": "off",
-        "no-redeclare": "off",
-        "no-setter-return": "off",
-        "no-this-before-super": "off",
-        "no-unreachable": "off",
-        "no-unsafe-negation": "off",
-        "no-var": "error",
-        "no-with": "off",
-        "prefer-const": "error",
-        "prefer-rest-params": "error",
-        "prefer-spread": "error"
-      }
-    },
-    {
-      "files": [
-        "**/*.{js,cjs,mjs,ts,cts,mts}"
-      ],
-      "rules": {
-        "no-empty-function": "error",
-        "typescript/adjacent-overload-signatures": "error",
-        "typescript/array-type": [
-          "error",
-          {
-            "default": "array-simple"
-          }
-        ],
-        "typescript/ban-tslint-comment": "off",
-        "typescript/class-literal-property-style": "off",
-        "typescript/consistent-generic-constructors": "off",
-        "typescript/consistent-indexed-object-style": "off",
-        "typescript/consistent-type-assertions": "off",
-        "typescript/consistent-type-definitions": "off",
-        "typescript/no-confusing-non-null-assertion": "off",
-        "typescript/no-inferrable-types": "off",
-        "typescript/prefer-for-of": "off",
-        "typescript/prefer-function-type": "off",
-        "no-useless-constructor": "warn",
-        "no-shadow": "error",
-        "no-loss-of-precision": "error",
-        "no-unused-expressions": "off",
-        "no-unused-vars": "off",
-        "typescript/unified-signatures": "warn",
-        "typescript/ban-ts-comment": "off",
-        "typescript/explicit-member-accessibility": "off",
-        "typescript/no-explicit-any": "off",
-        "typescript/no-empty-interface": "off",
-        "typescript/no-non-null-assertion": "warn",
-        "typescript/no-duplicate-enum-values": "off",
-        "typescript/no-unsafe-declaration-merging": "off",
-        "typescript/no-empty-object-type": "error",
-        "typescript/no-unsafe-function-type": "error",
-        "typescript/no-wrapper-object-types": "error",
-        "typescript/no-require-imports": "off",
-        "typescript/prefer-namespace-keyword": "off"
-      },
-      "plugins": [
-        "typescript"
-      ]
     }
   ]
-}
+});
