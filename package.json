@@ -7,20 +7,20 @@
   "version": "0.2.0",
   "description": "An oxlint rule-set for Cybozu.",
   "files": [
-    "src/configs",
-    "src/globals",
-    "src/presets"
+    "dist"
   ],
   "exports": {
-    ".": "./src/presets/base.ts",
-    "./presets/base": "./src/presets/base.ts",
-    "./presets/kintone-customize": "./src/presets/kintone-customize.ts",
-    "./presets/node": "./src/presets/node.ts",
-    "./presets/react": "./src/presets/react.ts",
-    "./presets/react-typescript": "./src/presets/react-typescript.ts",
-    "./presets/typescript": "./src/presets/typescript.ts"
+    ".": "./dist/presets/base.js",
+    "./presets/base": "./dist/presets/base.js",
+    "./presets/kintone-customize": "./dist/presets/kintone-customize.js",
+    "./presets/node": "./dist/presets/node.js",
+    "./presets/react": "./dist/presets/react.js",
+    "./presets/react-typescript": "./dist/presets/react-typescript.js",
+    "./presets/typescript": "./dist/presets/typescript.js"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "tsc"
+  },
   "keywords": [
     "oxlint",
     "oxlint-config",
@@ -42,7 +42,8 @@
   },
   "devDependencies": {
     "oxlint": "^1.65.0",
-    "oxlint-tsgolint": "^0.22.1"
+    "oxlint-tsgolint": "^0.22.1",
+    "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@11.0.9",
   "devEngines": {
