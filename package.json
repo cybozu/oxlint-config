@@ -13,6 +13,7 @@
     "./presets/base": "./dist/presets/base.js",
     "./presets/kintone-customize": "./dist/presets/kintone-customize.js",
     "./presets/node": "./dist/presets/node.js",
+    "./presets/node-typescript": "./dist/presets/node-typescript.js",
     "./presets/react": "./dist/presets/react.js",
     "./presets/react-typescript": "./dist/presets/react-typescript.js",
     "./presets/typescript": "./dist/presets/typescript.js"
