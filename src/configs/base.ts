@@ -1,7 +1,6 @@
 import type { OxlintConfig } from "oxlint";
 
 export const base: OxlintConfig = {
-  plugins: [],
   categories: {
     correctness: "off",
   },
@@ -14,6 +13,7 @@ export const base: OxlintConfig = {
   overrides: [
     {
       files: ["**/*.{js,cjs,mjs,ts,mts,cts,jsx,tsx}"],
+      plugins: ["typescript", "import"],
       env: {
         es2026: true,
         browser: true,
@@ -92,11 +92,14 @@ export const base: OxlintConfig = {
         "no-self-compare": "error",
         "no-sequences": "error",
         "no-throw-literal": "error",
-        "no-unused-expressions": ["error", { allowShortCircuit: true, allowTernary: true }],
+        "no-unused-expressions": [
+          "error",
+          { allowShortCircuit: true, allowTernary: true },
+        ],
         "no-useless-concat": "error",
         "no-void": "error",
         "prefer-regex-literals": "error",
-        "radix": "error",
+        radix: "error",
         "no-label-var": "error",
         "no-shadow": "error",
         "no-useless-computed-key": "error",
@@ -107,12 +110,15 @@ export const base: OxlintConfig = {
         "symbol-description": "error",
         "array-callback-return": "warn",
         "block-scoped-var": "warn",
-        "curly": ["warn", "multi-line"],
-        "eqeqeq": ["warn", "always", { null: "ignore" }],
+        curly: ["warn", "multi-line"],
+        eqeqeq: ["warn", "always", { null: "ignore" }],
         "guard-for-in": "warn",
         "no-div-regex": "warn",
         "no-else-return": "warn",
-        "no-empty-function": ["warn", { allow: ["arrowFunctions", "functions", "methods"] }],
+        "no-empty-function": [
+          "warn",
+          { allow: ["arrowFunctions", "functions", "methods"] },
+        ],
         "no-extra-label": "warn",
         "no-loop-func": "warn",
         "no-multi-str": "warn",
@@ -122,12 +128,15 @@ export const base: OxlintConfig = {
         "no-useless-call": "warn",
         "no-useless-return": "warn",
         "vars-on-top": "warn",
-        "yoda": "warn",
+        yoda: "warn",
         "no-inner-declarations": "warn",
         "no-template-curly-in-string": "warn",
         "no-useless-constructor": "warn",
         "prefer-arrow-callback": "warn",
-        "prefer-const": ["warn", { destructuring: "all", ignoreReadBeforeAssign: true }],
+        "prefer-const": [
+          "warn",
+          { destructuring: "all", ignoreReadBeforeAssign: true },
+        ],
         "prefer-spread": "warn",
         "max-depth": "warn",
         "max-nested-callbacks": ["warn", 5],
@@ -144,7 +153,6 @@ export const base: OxlintConfig = {
         "typescript/consistent-return": "warn",
         "typescript/dot-notation": "warn",
       },
-      plugins: ["typescript", "import"],
     },
   ],
 };

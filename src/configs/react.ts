@@ -3,7 +3,7 @@ import type { OxlintConfig } from "oxlint";
 export const react: OxlintConfig = {
   overrides: [
     {
-      files: ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}"],
+      files: ["**/*.{js,jsx,ts,tsx}"],
       plugins: ["react", "jsx-a11y"],
       rules: {
         "react/display-name": "error",
@@ -36,7 +36,10 @@ export const react: OxlintConfig = {
         "react/jsx-filename-extension": "error",
         "react/self-closing-comp": "warn",
         "react/jsx-boolean-value": "warn",
-        "react/jsx-curly-brace-presence": ["warn", { props: "never", children: "never" }],
+        "react/jsx-curly-brace-presence": [
+          "warn",
+          { props: "never", children: "never" },
+        ],
         "react/jsx-pascal-case": ["warn", { allowAllCaps: true }],
         "react/jsx-no-useless-fragment": "warn",
         "react/rules-of-hooks": "error",
@@ -60,8 +63,24 @@ export const react: OxlintConfig = {
         "jsx-a11y/no-noninteractive-element-to-interactive-role": [
           "error",
           {
-            ul: ["listbox", "menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
-            ol: ["listbox", "menu", "menubar", "radiogroup", "tablist", "tree", "treegrid"],
+            ul: [
+              "listbox",
+              "menu",
+              "menubar",
+              "radiogroup",
+              "tablist",
+              "tree",
+              "treegrid",
+            ],
+            ol: [
+              "listbox",
+              "menu",
+              "menubar",
+              "radiogroup",
+              "tablist",
+              "tree",
+              "treegrid",
+            ],
             li: ["option", "menuitem", "row", "tab", "treeitem"],
             table: ["grid"],
             td: ["gridcell"],
@@ -70,13 +89,27 @@ export const react: OxlintConfig = {
         "jsx-a11y/no-noninteractive-element-interactions": [
           "error",
           {
-            handlers: ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"],
+            handlers: [
+              "onClick",
+              "onMouseDown",
+              "onMouseUp",
+              "onKeyPress",
+              "onKeyDown",
+              "onKeyUp",
+            ],
           },
         ],
         "jsx-a11y/no-static-element-interactions": [
           "error",
           {
-            handlers: ["onClick", "onMouseDown", "onMouseUp", "onKeyPress", "onKeyDown", "onKeyUp"],
+            handlers: [
+              "onClick",
+              "onMouseDown",
+              "onMouseUp",
+              "onKeyPress",
+              "onKeyDown",
+              "onKeyUp",
+            ],
           },
         ],
         "jsx-a11y/anchor-has-content": "error",

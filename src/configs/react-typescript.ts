@@ -4,7 +4,7 @@ import type { OxlintConfig } from "oxlint";
 export const reactTypescript: OxlintConfig = {
   overrides: [
     {
-      files: ["**/*.{ts,cts,mts,tsx}"],
+      files: ["**/*.{ts,tsx}"],
       plugins: ["react"],
       rules: {
         // Restrict JSX to .tsx files only (overrides react config's default)

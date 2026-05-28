@@ -1,13 +1,12 @@
 import type { OxlintConfig } from "oxlint";
 
-const tsFiles = ["**/*.{js,cjs,mjs,ts,cts,mts,tsx}"];
-const tsFilesWithTsx = ["**/*.{ts,cts,mts,tsx}", ...tsFiles];
+const tsFiles = ["**/*.{ts,cts,mts,tsx}"];
 
 export const typescript: OxlintConfig = {
   overrides: [
     // Disable base ESLint rules that the TypeScript compiler already handles.
     {
-      files: tsFilesWithTsx,
+      files: tsFiles,
       rules: {
         "constructor-super": "off",
         "getter-return": "off",
