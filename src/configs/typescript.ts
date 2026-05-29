@@ -23,11 +23,7 @@ export const typescript: OxlintConfig = {
         "no-this-before-super": "off",
         "no-unreachable": "off",
         "no-unsafe-negation": "off",
-        "no-var": "error",
         "no-with": "off",
-        "prefer-const": "error",
-        "prefer-rest-params": "error",
-        "prefer-spread": "error",
       },
     },
     // Cybozu TypeScript rules
@@ -45,6 +41,10 @@ export const typescript: OxlintConfig = {
         "no-loss-of-precision": "error",
         "no-shadow": "error",
         "no-useless-constructor": "warn",
+        "no-var": "error",
+        "prefer-const": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
         // typescript plugin: error
         "typescript/adjacent-overload-signatures": "error",
         "typescript/array-type": ["error", { default: "array-simple" }],
