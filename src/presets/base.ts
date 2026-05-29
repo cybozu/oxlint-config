@@ -1,6 +1,6 @@
 import { defineConfig } from "oxlint";
-import { base } from "../configs/base.js";
+import { base } from "../configs/base.ts";
 
-export const basePreset = defineConfig({
+export default defineConfig({
   extends: [base],
 });

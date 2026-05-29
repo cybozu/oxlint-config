@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
-import { base } from "../configs/base.js";
-import { kintone } from "../configs/kintone.js";
+import { base } from "../configs/base.ts";
+import { kintone } from "../configs/kintone.ts";
 
-export const kintoneCustomizePreset = defineConfig({
+export default defineConfig({
   extends: [base, kintone],
 });

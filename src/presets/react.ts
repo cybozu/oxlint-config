@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
-import { base } from "../configs/base.js";
-import { react } from "../configs/react.js";
+import { base } from "../configs/base.ts";
+import { react } from "../configs/react.ts";
 
-export const reactPreset = defineConfig({
+export default defineConfig({
   extends: [base, react],
 });

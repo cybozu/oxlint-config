@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
-import { base } from "../configs/base.js";
-import { node } from "../configs/node.js";
+import { base } from "../configs/base.ts";
+import { node } from "../configs/node.ts";
 
-export const nodePreset = defineConfig({
+export default defineConfig({
   extends: [base, node],
 });

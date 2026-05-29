@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
-import { base } from "../configs/base.js";
-import { typescript } from "../configs/typescript.js";
+import { base } from "../configs/base.ts";
+import { typescript } from "../configs/typescript.ts";
 
-export const typescriptPreset = defineConfig({
+export default defineConfig({
   extends: [base, typescript],
 });
