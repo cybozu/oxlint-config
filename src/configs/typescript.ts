@@ -62,6 +62,9 @@ export const typescript: OxlintConfig = {
         // typescript plugin: warn
         "typescript/no-non-null-assertion": "warn",
         "typescript/unified-signatures": "warn",
+        // typescript plugin: warn (type-aware; requires `options.typeAware`)
+        "typescript/consistent-return": "warn",
+        "typescript/dot-notation": "warn",
         // typescript plugin: off (excluded from recommended per Cybozu's policy).
         "typescript/ban-ts-comment": "off",
         "typescript/ban-tslint-comment": "off",

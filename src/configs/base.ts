@@ -4,9 +4,6 @@ export const base: OxlintConfig = {
   categories: {
     correctness: "off",
   },
-  options: {
-    typeAware: true,
-  },
   env: {
     builtin: true,
   },
@@ -150,8 +147,6 @@ export const base: OxlintConfig = {
         "operator-assignment": "warn",
         "unicode-bom": "warn",
         "import/no-duplicates": "warn",
-        "typescript/consistent-return": "warn",
-        "typescript/dot-notation": "warn",
       },
     },
   ],
