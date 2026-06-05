@@ -59,10 +59,10 @@ export const typescript: OxlintConfig = {
         "typescript/no-wrapper-object-types": "error",
         "typescript/prefer-as-const": "error",
         "typescript/triple-slash-reference": "error",
+        "typescript/no-implied-eval": "error",
         // typescript plugin: warn
         "typescript/no-non-null-assertion": "warn",
         "typescript/unified-signatures": "warn",
-        // typescript plugin: warn (type-aware; requires `options.typeAware`)
         "typescript/consistent-return": "warn",
         "typescript/dot-notation": "warn",
         // typescript plugin: off (excluded from recommended per Cybozu's policy).
