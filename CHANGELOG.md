@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/cybozu/oxlint-config/compare/v0.3.0...v0.4.0) (2026-06-05)
+
+
+### Features
+
+* adjust type-aware rules and some missing rules, and disable eslint/curly ([#9](https://github.com/cybozu/oxlint-config/issues/9)) ([6903d6b](https://github.com/cybozu/oxlint-config/commit/6903d6b86979dc47aab4bb777b8a624063c903b0))
+
 ## [0.3.0](https://github.com/cybozu/oxlint-config/compare/v0.2.0...v0.3.0) (2026-05-29)
 
 
