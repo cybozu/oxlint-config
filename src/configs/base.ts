@@ -107,7 +107,8 @@ export const base: OxlintConfig = {
         "symbol-description": "error",
         "array-callback-return": "warn",
         "block-scoped-var": "warn",
-        curly: ["warn", "multi-line"],
+        // TODO: `multi-line` does not work, so confirm whether it is an issue with Oxlint.
+        // curly: ["warn", "multi-line"],
         eqeqeq: ["warn", "always", { null: "ignore" }],
         "guard-for-in": "warn",
         "no-div-regex": "warn",
