@@ -4,9 +4,6 @@ export const base: OxlintConfig = {
   categories: {
     correctness: "off",
   },
-  options: {
-    typeAware: true,
-  },
   env: {
     builtin: true,
   },
@@ -110,7 +107,8 @@ export const base: OxlintConfig = {
         "symbol-description": "error",
         "array-callback-return": "warn",
         "block-scoped-var": "warn",
-        curly: ["warn", "multi-line"],
+        // TODO: `multi-line` does not work, so confirm whether it is an issue with Oxlint.
+        // curly: ["warn", "multi-line"],
         eqeqeq: ["warn", "always", { null: "ignore" }],
         "guard-for-in": "warn",
         "no-div-regex": "warn",
@@ -150,8 +148,11 @@ export const base: OxlintConfig = {
         "operator-assignment": "warn",
         "unicode-bom": "warn",
         "import/no-duplicates": "warn",
-        "typescript/consistent-return": "warn",
-        "typescript/dot-notation": "warn",
+        "import/default": "error",
+        "import/export": "error",
+        "import/namespace": "error",
+        "import/no-named-as-default": "warn",
+        "import/no-named-as-default-member": "warn",
       },
     },
   ],

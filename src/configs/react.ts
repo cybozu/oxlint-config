@@ -28,6 +28,8 @@ export const react: OxlintConfig = {
         "react/no-did-update-set-state": "error",
         "react/no-multi-comp": ["error", { ignoreStateless: true }],
         "react/no-redundant-should-component-update": "error",
+        "react/no-unstable-nested-components": "error",
+        "react/require-render-return": "error",
         "react/no-this-in-sfc": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": "error",
