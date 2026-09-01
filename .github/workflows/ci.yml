@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # Required for Takumi Guard OIDC authentication
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Install pnpm
@@ -17,5 +20,8 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "pnpm"
+      - uses: flatt-security/setup-takumi-guard-npm@6d4182745c1e474c35a023573c2612c085be45a4 # v1.2.0
+        with:
+          bot-id: ${{ vars.TAKUMI_GUARD_BOT_ID }}
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
