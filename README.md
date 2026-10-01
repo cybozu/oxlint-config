@@ -19,6 +19,7 @@ export default defineConfig({ extends: [reactTypescript] });
 - `presets/node`
 - `presets/node-typescript`
 - `presets/react`
+- `presets/react-compiler`
 - `presets/react-typescript`
 - `presets/typescript`
 
