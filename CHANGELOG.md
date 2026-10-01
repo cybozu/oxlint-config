@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/cybozu/oxlint-config/compare/v0.4.0...v0.5.0) (2026-10-01)
+
+
+### Features
+
+* update oxlint to 1.85.0 / oxlint-tsgolint to 7.0.2003 and add react-compiler preset ([#13](https://github.com/cybozu/oxlint-config/issues/13)) ([94e45a4](https://github.com/cybozu/oxlint-config/commit/94e45a473c6ddd1ebca44679c0c77f462b5eb71b))
+
 ## [0.4.0](https://github.com/cybozu/oxlint-config/compare/v0.3.0...v0.4.0) (2026-06-05)
 
 
