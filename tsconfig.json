@@ -9,11 +9,8 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
+    // `node` is for the tests (`node:test`). The build does not include it (see tsconfig.build.json).
+    "types": ["node"],
 
     // Other Outputs
     "sourceMap": true,

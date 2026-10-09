@@ -27,3 +27,5 @@ jobs:
           bot-id: ${{ vars.TAKUMI_GUARD_BOT_ID }}
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      - run: pnpm typecheck
+      - run: pnpm test
