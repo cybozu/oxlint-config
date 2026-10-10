@@ -16,6 +16,7 @@ export default defineConfig({ extends: [reactTypescript] });
 
 - `presets/base`
 - `presets/kintone-customize`
+- `presets/kintone-dev`
 - `presets/node`
 - `presets/node-typescript`
 - `presets/react`
@@ -37,3 +38,14 @@ import reactCompiler from "@cybozu/oxlint-config/presets/react-compiler";
 
 export default defineConfig({ extends: [reactTypescript, reactCompiler] });
 ```
+
+## Development
+
+```bash
+pnpm build      # build into dist
+pnpm typecheck  # type check including tests
+pnpm test       # run the plugin rule tests
+```
+
+Rule tests are placed next to each rule (`*.test.ts`) and use `RuleTester` from `oxlint/plugins-dev`
+with the Node.js test runner.
