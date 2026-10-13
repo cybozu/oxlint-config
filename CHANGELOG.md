@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/cybozu/oxlint-config/compare/v0.5.0...v0.6.0) (2026-10-10)
+
+
+### Features
+
+* add kintone plugin and kintone-dev preset ([#15](https://github.com/cybozu/oxlint-config/issues/15)) ([d0d3206](https://github.com/cybozu/oxlint-config/commit/d0d3206202d5616776c44b0421b14b8e07061592))
+
 ## [0.5.0](https://github.com/cybozu/oxlint-config/compare/v0.4.0...v0.5.0) (2026-10-01)
 
 
