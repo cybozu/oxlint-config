@@ -39,6 +39,21 @@ import reactCompiler from "@cybozu/oxlint-config/presets/react-compiler";
 export default defineConfig({ extends: [reactTypescript, reactCompiler] });
 ```
 
+### kintone development rules (opt-in)
+
+`presets/kintone-dev` is an add-on preset that enables custom rules for developing kintone.
+It does not include `base`, so combine it with another preset:
+
+```ts
+import { defineConfig } from "oxlint";
+import reactTypescript from "@cybozu/oxlint-config/presets/react-typescript";
+import kintoneDev from "@cybozu/oxlint-config/presets/kintone-dev";
+
+export default defineConfig({ extends: [reactTypescript, kintoneDev] });
+```
+
+See [src/plugins/kintone/README.md](src/plugins/kintone/README.md) for the rules.
+
 ## Development
 
 ```bash
