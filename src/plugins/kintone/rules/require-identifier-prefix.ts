@@ -1,7 +1,4 @@
-import type { RuleTester } from "oxlint/plugins-dev";
-
-// oxlint does not export the rule type, so extract it from the RuleTester signature.
-type Rule = Parameters<RuleTester["run"]>[1];
+import type { Rule } from "../types.ts";
 
 // Requires `identifierPrefix` for `createRoot` of `react-dom/client`.
 // When another React root (e.g. a global navigation in the header) is on the same page,
