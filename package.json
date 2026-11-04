@@ -74,10 +74,10 @@
     }
   },
   "devDependencies": {
-    "@types/node": "24.19.1",
-    "oxlint": "1.85.0",
-    "oxlint-tsgolint": "7.0.2003",
-    "typescript": "6.0.3"
+    "@types/node": "26.6.6",
+    "oxlint": "1.90.0",
+    "oxlint-tsgolint": "7.0.2005",
+    "typescript": "7.0.2"
   },
   "devEngines": {
     "packageManager": {
