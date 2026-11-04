@@ -24,7 +24,10 @@ jobs:
           cache: "pnpm"
       - uses: flatt-security/setup-takumi-guard-npm@14f07d0cbc739b42a1b7c70a04c2b84cd1318ddd # v1.4.0
         with:
-          bot-id: ${{ vars.TAKUMI_GUARD_BOT_ID }}
+          # GitHub does not issue OIDC tokens to pull requests from forks, and since v1.4.0
+          # an authentication failure fails this step. Use anonymous mode (empty bot-id) for
+          # forks so their installs still go through Takumi Guard.
+          bot-id: ${{ github.event.pull_request.head.repo.fork != true && vars.TAKUMI_GUARD_BOT_ID || '' }}
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - run: pnpm typecheck
