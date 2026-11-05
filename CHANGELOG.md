@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/cybozu/oxlint-config/compare/v0.6.0...v0.7.0) (2026-11-05)
+
+
+### Features
+
+* disable react/style-prop-object in react-typescript preset ([#22](https://github.com/cybozu/oxlint-config/issues/22)) ([ddd8f98](https://github.com/cybozu/oxlint-config/commit/ddd8f98497989255b183a4019f831c9cccea7f29))
+
 ## [0.6.0](https://github.com/cybozu/oxlint-config/compare/v0.5.0...v0.6.0) (2026-10-10)
 
 
